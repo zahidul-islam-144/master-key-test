@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .hotDeals_thumb {
+        @apply flex  h-96 border;
+    }
+
+    .hotDeals_thumb .left_contents {
+        @apply flex justify-center items-center font-bold text-4xl leading-normal h-auto w-[548px] border p-5;
+    }
+
+    .hotDeals_thumb .left_contents span {
+        @apply text-[#FFAE5D] mx-1;
+    }
+
+    .hotDeals_products p {
+        @apply font-semibold
+    }
+}

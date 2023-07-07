@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header_main {
+        @apply flex flex-col;
+    }
+
+  .header_block1, .header_block2 {
+    @apply flex justify-between items-center;
+  }
+
+  .header_block1 {
+    @apply py-2;
+  }
+
+  .header_block2 {
+    @apply border-t-2 py-2
+  }
+
+  .block1_left {
+    @apply flex justify-center items-center cursor-pointer;
+  }
+
+  .block1_left .contact-icon {
+    @apply mr-1 h-5 w-5 cursor-pointer;
+  }
+
+  .block1_right > span {
+    @apply text-black font-bold leading-10 text-2xl;
+  }
+
+  .block2_right .location_btn {
+    @apply flex justify-between items-center px-1 py-3 rounded-xl font-medium leading-6 bg-[#FFAE5D]
+  }
+
+  .block2_left form{
+    @apply border w-auto rounded-2xl flex justify-between;
+
+  }
+
+  .block2_left form input{
+    @apply block h-8 max-w-xl p-4 rounded-2xl
+
+  }
+
+  .block2_left form button{
+    @apply block m-2 cursor-pointer;
+
+  }
+
+  .header_block3 ul {
+    @apply flex justify-between px-2
+  }
+
+  .header_block3 ul li {
+    @apply text-[#606060] font-medium text-base leading-6 cursor-pointer hover:underline
+  }
+}

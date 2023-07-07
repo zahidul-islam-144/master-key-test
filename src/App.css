@@ -1,0 +1,18 @@
+@import '../src//styles/Header.css';
+@import '../src//styles/HotDealsThumb.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body {
+        @apply p-0 m-0;
+    }
+}
+
+@layer components {
+    .app {
+        @apply container  mx-auto;
+    }
+}

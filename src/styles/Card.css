@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card_img_block {
+        @apply h-[337px] w-[256px]
+    }
+}
