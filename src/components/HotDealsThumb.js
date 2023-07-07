@@ -7,6 +7,7 @@ const HotDealsThumb = () => {
 
     const dispatch = useDispatch();
     const data = useSelector((state)=> state?.products?.productData)
+    console.log("💛 ~ file: HotDealsThumb.js:10 ~ HotDealsThumb ~ data:", data?.products[0]?.productData)
     // const [products, setProducts] = useState(null)
    
     useEffect(()=>{
@@ -25,8 +26,9 @@ const HotDealsThumb = () => {
         <p>hot deals for you</p>
 
         <div className="products_block">
-            <Card data={data}/>
-
+        {
+            data?.products[0]?.productData?.map((item)=><Card data={item}/>)
+        }
         </div>
       </div>
     </section>
